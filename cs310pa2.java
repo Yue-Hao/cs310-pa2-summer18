@@ -45,6 +45,9 @@ public class cs310pa2
                                          new Comparator<Point2D>(){public int compare(Point2D a, Point2D b){ Double r=a.x-b.x; return (r>0)?1:((r<0)?-1:0);}},
                                          new Comparator<Point2D>(){public int compare(Point2D a, Point2D b){ Double r=a.y-b.y; return (r>0)?1:((r<0)?-1:0);}}
                                         );
+
+          rt.build(data);
+
           //read query
           while(scanner.hasNextDouble())
           {
