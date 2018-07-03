@@ -77,9 +77,9 @@ Node Build1DRangeTree(P)
 FindSplitNode(x, x')
 {
 	 v = root;
-	 while( v is not a leaf and (x' <= xv or x > xv) )
+	 while( v is not a leaf and (x' <= v or x > v) )
 	 {
-	     if( x' <= xv )
+	     if( x' <= v )
 	     	v = lc(v); // left child of the node v 
 	     else 
 	     	v = rc(v); // right child of the node v 
