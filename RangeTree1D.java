@@ -108,6 +108,8 @@ public class RangeTree1D<T>
   //Method to report subtree
   protected void reportSubTree(Node<T> n,IterableLinkedList<T> l)
   {
+    if(n==null) return; //do nothing
+
     if(n.right == null && n.left == null){
       l.add(n.data);
     }
